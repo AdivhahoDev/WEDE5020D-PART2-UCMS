@@ -1,0 +1,563 @@
+/* ============================================
+   UCMS - University Course Management System
+   Main Stylesheet
+   ============================================ */
+
+/* ---------- RESET & BASE STYLES ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f0f4f8;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+h1 {
+    font-size: 2rem;
+    color: #003366;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #004488;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #0055aa;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background: linear-gradient(135deg, #003366 0%, #0055aa 100%);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.logo-container h1 {
+    color: white;
+    margin-bottom: 0.25rem;
+}
+
+.logo-container p {
+    color: #d4eaff;
+    font-size: 0.9rem;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav {
+    background-color: #002244;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #0055aa;
+    color: #ffcc00;
+    transform: translateY(-2px);
+}
+
+nav a.active {
+    background-color: #0055aa;
+    color: #ffcc00;
+    border-bottom: 3px solid #ffcc00;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 70vh;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+    background: linear-gradient(135deg, #e8f0fe 0%, #d4e4f7 100%);
+    padding: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    background-color: #003366;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: #0055aa;
+    transform: scale(1.05);
+}
+
+/* ---------- FEATURE GRID ---------- */
+.features-overview {
+    margin-bottom: 2rem;
+}
+
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.feature-card {
+    flex: 1;
+    min-width: 200px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* ---------- STATS PREVIEW ---------- */
+.stats-preview {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #003366;
+}
+
+.stat-label {
+    color: #666;
+}
+
+/* ---------- PAGE HEADER ---------- */
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #003366;
+}
+
+/* ---------- ABOUT PAGE ---------- */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-text li {
+    margin-bottom: 0.5rem;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.team-section {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.team-card {
+    flex: 1;
+    background: #f8fafd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 4px solid #003366;
+}
+
+/* ---------- FEATURES DETAILED PAGE ---------- */
+.features-detailed {
+    margin-bottom: 2rem;
+}
+
+.feature-detail {
+    display: flex;
+    gap: 1.5rem;
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feature-detail:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.feature-detail-icon {
+    font-size: 3rem;
+}
+
+.feature-detail-content {
+    flex: 1;
+}
+
+.demo-section {
+    background: linear-gradient(135deg, #003366 0%, #0055aa 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.demo-section h3,
+.demo-section p,
+.demo-section li {
+    color: white;
+}
+
+.demo-section ul {
+    display: inline-block;
+    text-align: left;
+    margin: 1rem auto;
+}
+
+/* ---------- CONTACT PAGE ---------- */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-form {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #003366;
+    box-shadow: 0 0 5px rgba(0,51,102,0.3);
+}
+
+.submit-button {
+    background-color: #003366;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: #0055aa;
+    transform: scale(1.02);
+}
+
+.contact-info {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.info-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.info-item strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #003366;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: #002244;
+    color: white;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.footer-section h4 {
+    color: #ffcc00;
+    margin-bottom: 1rem;
+}
+
+.footer-section a {
+    display: block;
+    color: #d4eaff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover,
+.footer-section a:focus {
+    color: #ffcc00;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #004488;
+    font-size: 0.9rem;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+/* Tablet View (768px and below) */
+@media (max-width: 768px) {
+    nav a {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .hero {
+        padding: 1.5rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    .feature-card {
+        min-width: 150px;
+    }
+    
+    .stats-container {
+        gap: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Mobile View (480px and below) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 0.75rem;
+        border-bottom: 1px solid #004488;
+    }
+    
+    nav a:last-child {
+        border-bottom: none;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    .hero {
+        padding: 1rem;
+    }
+    
+    .feature-grid {
+        flex-direction: column;
+    }
+    
+    .feature-card {
+        min-width: auto;
+    }
+    
+    .stats-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .feature-detail {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .team-grid {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        padding: 1rem;
+    }
+    
+    .contact-form,
+    .contact-info {
+        padding: 1rem;
+    }
+}
+
+/* Large Desktop (1200px and above) */
+@media (min-width: 1200px) {
+    main {
+        max-width: 1400px;
+    }
+    
+    .feature-card {
+        min-width: 250px;
+    }
+}
