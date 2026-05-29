@@ -15,7 +15,7 @@ The website was designed with a professional, educational institution aesthetic 
 - **Typography**: Clean sans-serif fonts (Segoe UI, Tahoma) for optimal readability across devices
 - **Layout**: Card-based design for feature presentation, with consistent spacing and visual hierarchy
 
-### Key Visual Features
+# Key Visual Features
 
 1. **Consistent Navigation**: Same navigation menu across all 4 pages (Home, About, Features, Contact)
 2. **Interactive Elements**: Hover effects on buttons, navigation links, and feature cards
