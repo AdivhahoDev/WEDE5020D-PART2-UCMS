@@ -359,7 +359,7 @@ main {
 
 .contact-info {
     flex: 1;
-    background: white;
+    background: rgb(229, 226, 226);
     padding: 2rem;
     border-radius: 10px;
 }

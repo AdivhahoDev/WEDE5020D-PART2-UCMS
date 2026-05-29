@@ -8,7 +8,7 @@ A comprehensive web-based prototype for managing student academic performance, g
 
 This section documents the visual design implementation for the UCMS website.
 
-### Design Philosophy
+## Design Philosophy
 
 The website was designed with a professional, educational institution aesthetic in mind:
 - **Color Scheme**: Deep blues (#003366, #0055aa) representing trust and professionalism, complemented by white and light gray backgrounds for readability
